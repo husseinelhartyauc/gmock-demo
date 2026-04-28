@@ -1,0 +1,5 @@
+if(EXISTS "/home/hussein/gtest-demo/gmock-demo/build/mock[1]_tests.cmake")
+  include("/home/hussein/gtest-demo/gmock-demo/build/mock[1]_tests.cmake")
+else()
+  add_test(mock_NOT_BUILT mock_NOT_BUILT)
+endif()

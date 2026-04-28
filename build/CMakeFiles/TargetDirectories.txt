@@ -1,0 +1,4 @@
+/home/hussein/gtest-demo/gmock-demo/build/CMakeFiles/mock.dir
+/home/hussein/gtest-demo/gmock-demo/build/CMakeFiles/test.dir
+/home/hussein/gtest-demo/gmock-demo/build/CMakeFiles/edit_cache.dir
+/home/hussein/gtest-demo/gmock-demo/build/CMakeFiles/rebuild_cache.dir

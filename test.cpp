@@ -28,3 +28,12 @@ TEST(UserRegistrationTest, ReturnsFalseWhenEmailFails) {
 
   EXPECT_FALSE(reg.registerUser("Bob", "bob@test.com"));
 }
+
+TEST(UserRegistrationTest, wrongMails) {
+  MockEmailService mock;
+  UserRegistration reg(&mock);
+
+  EXPECT_CALL(mock, sendEmail(StrEq("tdtyjsrytdjut0d9"), StrEq("Welcome"), StrEq("Hello Mark"))).WillOnce(Return(false));
+
+  EXPECT_FALSE(reg.registerUser("Mark", "tdtyjsrytdjut0d9"));
+}

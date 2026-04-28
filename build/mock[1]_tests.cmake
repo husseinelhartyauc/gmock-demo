@@ -1,0 +1,7 @@
+add_test([=[UserRegistrationTest.SendsWelcomeEmail]=]  /home/hussein/gtest-demo/gmock-demo/build/mock [==[--gtest_filter=UserRegistrationTest.SendsWelcomeEmail]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[UserRegistrationTest.SendsWelcomeEmail]=]  PROPERTIES WORKING_DIRECTORY /home/hussein/gtest-demo/gmock-demo/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test([=[UserRegistrationTest.ReturnsFalseWhenEmailFails]=]  /home/hussein/gtest-demo/gmock-demo/build/mock [==[--gtest_filter=UserRegistrationTest.ReturnsFalseWhenEmailFails]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[UserRegistrationTest.ReturnsFalseWhenEmailFails]=]  PROPERTIES WORKING_DIRECTORY /home/hussein/gtest-demo/gmock-demo/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test([=[UserRegistrationTest.wrongMails]=]  /home/hussein/gtest-demo/gmock-demo/build/mock [==[--gtest_filter=UserRegistrationTest.wrongMails]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[UserRegistrationTest.wrongMails]=]  PROPERTIES WORKING_DIRECTORY /home/hussein/gtest-demo/gmock-demo/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set(  mock_TESTS UserRegistrationTest.SendsWelcomeEmail UserRegistrationTest.ReturnsFalseWhenEmailFails UserRegistrationTest.wrongMails)
